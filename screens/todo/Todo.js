@@ -122,7 +122,7 @@ const Todo = (props) => {
       </KeyboardAvoidingView>
 
       <View style={{ width: 350, height: 250 }}>
-        <FlatList
+      <FlatList
           data={props.allTasks}
           renderItem={({ item, index }) => (
             <Task item={item} db={db} userId={props.userId} key={index} />

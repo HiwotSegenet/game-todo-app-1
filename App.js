@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { StyleSheet } from "react-native";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -37,7 +36,7 @@ function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="LandingPage">
+      <Stack.Navigator initialRouteName="landingPage">
         <Stack.Screen
           name="landingPage"
           options={{
@@ -102,29 +101,12 @@ function App() {
             />
           )}
         </Stack.Screen>
-        {/* <Stack.Screen name="Score" options={{ headerTitle: "Todo List" }}>
-          {(props) => (
-Score            <Todo
-             Score.props}
-              userAuth={userAuth}
-              userId={userId}
-              allTasks={allTasks}
-              setAllTasks={setAllTasks}
-            />
-          )}
-        </Stack.Screen> */}
+      
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: "#fff",
-//     alignItems: "center",
-//     justifyContent: "center",
-//   },
-// });
+
 
 export default App;

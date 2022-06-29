@@ -40,7 +40,7 @@ const Home = (props) => {
       <TouchableOpacity onPress={signOut} style={styles.signOutButton}>
         <AntDesign
           name="logout"
-          size={30}
+          size={25}
           color="black"
         />
       </TouchableOpacity>
